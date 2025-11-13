@@ -173,6 +173,8 @@ spec:
                         - >-  
                           set -x &&
                           apk add --no-cache curl jq openssl &&
+                          pwd &&
+                          ls -lrt &&
                           repo={{`{{inputs.parameters.deployrepo}}`}} &&
                           repo_name=`echo -n $repo | awk -F/ '{print $NF}'` &&
                           env_name={{`{{inputs.parameters.envname}}`}} &&
