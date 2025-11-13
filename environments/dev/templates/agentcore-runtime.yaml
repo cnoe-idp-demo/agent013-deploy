@@ -6,7 +6,7 @@ metadata:
 spec:
   agentRuntimeArtifact:
     containerConfiguration:
-      containerURI: {{ .Values.imageRepo }}:{{ .Values.tag }}
+      containerURI: {{ .Values.imageRepo }}/{{ .Values.agentName }}:{{ .Values.tag }}
   agentRuntimeName: {{ .Values.agentRuntimeName }}
   roleARN: {{ .Values.roleArn }}
   networkConfiguration:
